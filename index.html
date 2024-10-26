@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>YipiReb3lde</title>
+    <link rel="icon" href="img/cw3.png" type="image/png">
+    <style>
+              * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            html, body {
+                height: 100%;
+            }
+            body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #202020;
+            color: silver;
+        }
+        .container {
+            text-align: center;
+            width: 90%;
+            max-width: 800px;
+            position: relative; /* Necesario para el posicionamiento absoluto del menú */
+        }
+        nav {
+            margin: 20px 0;
+        }
+        .menu {
+            display: none;
+            background-color: yellowgreen;
+            padding: 10px;
+            border-radius: 5px;
+            position: absolute; /* Posiciona el menú de forma absoluta */
+            top: 60px; /* Ajusta según sea necesario */
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10; /* Asegura que el menú esté encima */
+        }
+        .menu a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            padding: 8px 12px;
+        }
+        .menu a:hover {
+            background-color: whitesmoke;
+        }
+        .toggle {
+            background-color: #ff2a6d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+         /*   display: none; /* Ocultamos el botón inicialmente */ */
+            position: relative; /* Necesario para el posicionamiento */
+            z-index: 20; /* Asegura que el botón esté encima */
+        }
+        .logo {
+            width: auto;
+            height: 200px;
+        }
+      
+
+        @media (max-width: 600px) {
+            .toggle {
+                display: block; /* Mostramos el botón en pantallas pequeñas */
+            }
+        }
+        @media (min-width: 601px) {
+       
+            /* hola */
+        }
+        footer {
+            background-color: #202020;
+            color: yellowgreen;
+            text-align: center;
+            padding: 15px 0; /* Espaciado interno */
+    }
+    </style>
+</head>
+<body>
+      <img class="logo" src="img/caosw3nEs.png">
+
+    <div class="container">
+      
+        <button class="toggle" onclick="toggleMenu()">Menú</button>
+        <nav class="menu" id="menu">
+            <a href="#"></a>
+            <a href="https://x.com/CaosW3n">X</a>
+            <a href="https://youtube.com/@CaosW3n">Videos</a>
+            <a href="https://caosw3n.itch.io">itch.io</a>
+            <a href="#"></a>
+        </nav>
+        <div id="content">
+             <h2 id="sec2">Teoría del Caos</h2>
+            <p>
+                La teoría del caos es una fascinante intersección entre matemáticas, física y otras ciencias que explora los misterios de los sistemas complejos. Esta disciplina revela por qué algunos sistemas parecen danzar en un caos impredecible: no solo porque estén compuestos por múltiples elementos enredados, sino también porque incluso aquellos que parecen sencillos pueden volverse completamente indescifrables a largo plazo. ¡Es como si el universo estuviera lleno de sorpresas inesperadas! 
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+  <footer>
+         <b> &#169; 2024  Created by CaosW3n</b><br>
+         <em>No se usan cokies, no se recogen datos</em>
+    </footer>
+</body>
+</html>
